@@ -60,6 +60,11 @@ if __name__ == "__main__":
     TS = task_significance(QUESTIONS[4], QUESTIONS[13], QUESTIONS[20], QUESTIONS[23])
     AU = autonomy(QUESTIONS[1], QUESTIONS[9], QUESTIONS[17], QUESTIONS[21])
     FB = feedback(QUESTIONS[5], QUESTIONS[6], QUESTIONS[10], QUESTIONS[12], QUESTIONS[15], QUESTIONS[19])
+    print("Skill Variety score:", SV)
+    print("Task Identity score:", TS)
+    print("Task Significance score:", TS)
+    print("Autonomy score:", AU)
+    print("Feedback score:", DB)
 
     MPS = ((SV + TI + TS) / 3) * AU * FB
 
