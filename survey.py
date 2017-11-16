@@ -1,4 +1,4 @@
-'''A Python sCRipt that calculates the Motivating Potential Score given a CSV file'''
+'''A Python script that calculates the Motivating Potential Score given a CSV file'''
 
 import csv
 import sys
