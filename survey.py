@@ -55,6 +55,7 @@ if __name__ == "__main__":
         QUESTIONS[i] = sum(int(row[key]) for row in reader) / ROW_COUNT
         print("The average for", key, "is", QUESTIONS[i])
 
+    print("")
     SV = skill_var(QUESTIONS[2], QUESTIONS[8], QUESTIONS[11], QUESTIONS[14], QUESTIONS[18])
     TI = task_identity(QUESTIONS[3], QUESTIONS[7], QUESTIONS[16], QUESTIONS[22])
     TS = task_significance(QUESTIONS[4], QUESTIONS[13], QUESTIONS[20], QUESTIONS[23])
@@ -64,7 +65,8 @@ if __name__ == "__main__":
     print("Task Identity score:", TS)
     print("Task Significance score:", TS)
     print("Autonomy score:", AU)
-    print("Feedback score:", DB)
+    print("Feedback score:", FB)
+    print("")
 
     MPS = ((SV + TI + TS) / 3) * AU * FB
 
